@@ -23,7 +23,7 @@ public interface DiaController {
     ResponseEntity<DiaOut> read(@PathVariable("id_dia") String id_dia);
 
     // Rota de leitura de lembretes
-    @GetMapping("/dia/lembretes")
+    @PostMapping("/dia/lembretes")
     ResponseEntity<List<LembreteOut>> read_lembretes(
         @RequestHeader(required = true, name = "id-user") String UserId,    
         @RequestBody DiaData data);
