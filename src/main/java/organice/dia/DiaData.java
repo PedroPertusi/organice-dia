@@ -7,11 +7,8 @@ import lombok.experimental.Accessors;
 
 @Builder
 @Accessors(fluent = true, chain = true)
-public record DiaOut (
-    Date dia, 
-    Date data_criacao,
-    String dia_da_semana,
-    String descricao
+public record DiaData (
+    Date dia
 ) {
     
 }

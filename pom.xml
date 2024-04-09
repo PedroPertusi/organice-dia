@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>organice</groupId>
-	<artifactId>lembrete</artifactId>
+	<artifactId>dia</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lembrete</name>
+	<name>dia</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
         <java.version>17</java.version>
@@ -27,6 +27,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>organice</groupId>
+            <artifactId>lembrete</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
