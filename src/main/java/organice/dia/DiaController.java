@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 
+import organice.lembrete.LembreteDateIn;
 import organice.lembrete.LembreteOut;
 
 
@@ -26,7 +27,7 @@ public interface DiaController {
     @PostMapping("/dia/lembretes")
     ResponseEntity<List<LembreteOut>> read_lembretes(
         @RequestHeader(required = true, name = "id-user") String UserId,    
-        @RequestBody DiaData data);
+        @RequestBody LembreteDateIn data);
 
     // Rota de criação
     @PostMapping("/dia")
