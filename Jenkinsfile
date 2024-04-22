@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build Lembrete') {
             steps {
-                build job: 'organice-lembrete', wait: true
+                build job: 'organice-lembrete-resource', wait: true
             }
         }
         stage('Jenkins Dia') {
